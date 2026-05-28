@@ -11,8 +11,19 @@
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loader">
-            <div class="spinner"></div>
-            <p>Cargando...</p>
+            <div class="letters-container">
+                <div class="letter D">D</div>
+                <div class="lightning-container">
+                    <svg class="lightning-bolt" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+                        <path class="bolt-path" d="M 50 0 L 30 60 L 60 60 L 40 110 L 70 110 L 50 150" />
+                        <path class="bolt-glow" d="M 50 0 L 30 60 L 60 60 L 40 110 L 70 110 L 50 150" />
+                    </svg>
+                    <div class="electric-sparks"></div>
+                </div>
+                <div class="letter A">A</div>
+            </div>
+            <div class="anchor-ring"></div>
+            <p class="loading-text">Cargando...</p>
         </div>
     </div>
 
@@ -60,17 +71,17 @@
             <h2 class="section-title">Productos Destacados</h2>
             
             <div class="products-grid">
-                <!-- Producto 1: Termo Stanley -->
+                <!-- Producto 1: Termo Stanley Verde -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1602143407151-0111d25649e8?w=500&q=80" alt="Termo Stanley">
+                        <img src="https://images.unsplash.com/photo-1605658189877-1e64f1500d6a?w=500&q=80" alt="Termo Stanley Verde">
                         <span class="badge discount">-25%</span>
                         <button class="favorite-btn">
                             <i class="far fa-heart"></i>
                         </button>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Termo Stanley 1.9L</h3>
+                        <h3 class="product-title">Termo Stanley 1.9L Verde</h3>
                         <p class="product-category">Termos</p>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
@@ -84,23 +95,23 @@
                             <span class="price-current">$180.000</span>
                             <span class="price-original">$240.000</span>
                         </div>
-                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Termo Stanley 1.9L', '180000')">
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Termo Stanley 1.9L Verde', '180000')">
                             <i class="fab fa-whatsapp"></i> Comprar
                         </button>
                     </div>
                 </div>
 
-                <!-- Producto 2: Cargador Rápido -->
+                <!-- Producto 2: Cargador Rápido USB-C -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1583863788454-4aedded81e8b?w=500&q=80" alt="Cargador Rápido">
+                        <img src="https://images.unsplash.com/photo-1622646279892-0b4e0d54bcf4?w=500&q=80" alt="Cargador Rápido USB-C">
                         <span class="badge new">Nuevo</span>
                         <button class="favorite-btn">
                             <i class="far fa-heart"></i>
                         </button>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Cargador Rápido 65W</h3>
+                        <h3 class="product-title">Cargador Rápido USB-C 65W</h3>
                         <p class="product-category">Cargadores</p>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
@@ -113,7 +124,7 @@
                         <div class="product-price">
                             <span class="price-current">$95.000</span>
                         </div>
-                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Cargador Rápido 65W', '95000')">
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Cargador Rápido USB-C 65W', '95000')">
                             <i class="fab fa-whatsapp"></i> Comprar
                         </button>
                     </div>
@@ -158,7 +169,7 @@
                         </button>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Termo Stanley Classic 1L</h3>
+                        <h3 class="product-title">Termo Stanley Classic Negro 1L</h3>
                         <p class="product-category">Termos</p>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
@@ -172,23 +183,23 @@
                             <span class="price-current">$140.000</span>
                             <span class="price-original">$200.000</span>
                         </div>
-                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Termo Stanley Classic 1L', '140000')">
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Termo Stanley Classic Negro 1L', '140000')">
                             <i class="fab fa-whatsapp"></i> Comprar
                         </button>
                     </div>
                 </div>
 
-                <!-- Producto 5: Power Bank -->
+                <!-- Producto 5: Cargador Inalámbrico -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1609592424369-27b4ab238b4a?w=500&q=80" alt="Power Bank">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&q=80" alt="Cargador Inalámbrico">
                         <span class="badge discount">-20%</span>
                         <button class="favorite-btn">
                             <i class="far fa-heart"></i>
                         </button>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Power Bank 20000mAh</h3>
+                        <h3 class="product-title">Cargador Inalámbrico 15W</h3>
                         <p class="product-category">Cargadores</p>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
@@ -199,39 +210,39 @@
                             <span class="rating-count">(156)</span>
                         </div>
                         <div class="product-price">
-                            <span class="price-current">$85.000</span>
-                            <span class="price-original">$105.000</span>
+                            <span class="price-current">$75.000</span>
+                            <span class="price-original">$95.000</span>
                         </div>
-                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Power Bank 20000mAh', '85000')">
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Cargador Inalámbrico 15W', '75000')">
                             <i class="fab fa-whatsapp"></i> Comprar
                         </button>
                     </div>
                 </div>
 
-                <!-- Producto 6: Audífonos In-Ear -->
+                <!-- Producto 6: Termo Stanley Rojo -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=500&q=80" alt="Audífonos In-Ear">
+                        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=500&q=80" alt="Termo Stanley Rojo">
                         <span class="badge new">Nuevo</span>
                         <button class="favorite-btn">
                             <i class="far fa-heart"></i>
                         </button>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Audífonos In-Ear Wireless</h3>
-                        <p class="product-category">Audífonos</p>
+                        <h3 class="product-title">Termo Stanley Adventure 1.2L Rojo</h3>
+                        <p class="product-category">Termos</p>
                         <div class="product-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <span class="rating-count">(394)</span>
+                            <span class="rating-count">(412)</span>
                         </div>
                         <div class="product-price">
-                            <span class="price-current">$75.000</span>
+                            <span class="price-current">$165.000</span>
                         </div>
-                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Audífonos In-Ear Wireless', '75000')">
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Termo Stanley Adventure 1.2L Rojo', '165000')">
                             <i class="fab fa-whatsapp"></i> Comprar
                         </button>
                     </div>
