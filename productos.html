@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Productos Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-bolt"></i> TechStore</h1>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#categorias" class="nav-link">Categorías</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="icon-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="icon-btn cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Productos Tech Premium</h2>
+                <p class="hero-subtitle">Termos Stanley, cargadores y audífonos de la más alta calidad</p>
+                <button class="btn btn-primary" onclick="window.location.href='#productos'">Ver Productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section class="products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            
+            <div class="products-grid">
+                <!-- Producto 1: Termo Stanley -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1602143407151-0111d25649e8?w=500&q=80" alt="Termo Stanley">
+                        <span class="badge discount">-25%</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Termo Stanley 1.9L</h3>
+                        <p class="product-category">Termos</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(342)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$180.000</span>
+                            <span class="price-original">$240.000</span>
+                        </div>
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Termo Stanley 1.9L', '180000')">
+                            <i class="fab fa-whatsapp"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Cargador Rápido -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583863788454-4aedded81e8b?w=500&q=80" alt="Cargador Rápido">
+                        <span class="badge new">Nuevo</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cargador Rápido 65W</h3>
+                        <p class="product-category">Cargadores</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(189)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$95.000</span>
+                        </div>
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Cargador Rápido 65W', '95000')">
+                            <i class="fab fa-whatsapp"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Audífonos Bluetooth -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&q=80" alt="Audífonos Bluetooth">
+                        <span class="badge hot">🔥 Hot</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Audífonos Bluetooth Pro</h3>
+                        <p class="product-category">Audífonos</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(521)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$120.000</span>
+                        </div>
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Audífonos Bluetooth Pro', '120000')">
+                            <i class="fab fa-whatsapp"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Termo Stanley Negro -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1570576639380-0d1b6259f8d9?w=500&q=80" alt="Termo Stanley Negro">
+                        <span class="badge discount">-30%</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Termo Stanley Classic 1L</h3>
+                        <p class="product-category">Termos</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(278)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$140.000</span>
+                            <span class="price-original">$200.000</span>
+                        </div>
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Termo Stanley Classic 1L', '140000')">
+                            <i class="fab fa-whatsapp"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Power Bank -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1609592424369-27b4ab238b4a?w=500&q=80" alt="Power Bank">
+                        <span class="badge discount">-20%</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Power Bank 20000mAh</h3>
+                        <p class="product-category">Cargadores</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$85.000</span>
+                            <span class="price-original">$105.000</span>
+                        </div>
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Power Bank 20000mAh', '85000')">
+                            <i class="fab fa-whatsapp"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 6: Audífonos In-Ear -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=500&q=80" alt="Audífonos In-Ear">
+                        <span class="badge new">Nuevo</span>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Audífonos In-Ear Wireless</h3>
+                        <p class="product-category">Audífonos</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-count">(394)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$75.000</span>
+                        </div>
+                        <button class="btn btn-secondary buy-now" onclick="comprarWhatsApp('Audífonos In-Ear Wireless', '75000')">
+                            <i class="fab fa-whatsapp"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias Section -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <h2 class="section-title">Categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-mug-hot category-icon"></i>
+                    <h3>Termos Stanley</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-bolt category-icon"></i>
+                    <h3>Cargadores</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-headphones category-icon"></i>
+                    <h3>Audífonos</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-mobile-alt category-icon"></i>
+                    <h3>Accesorios</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Suscríbete y obtén 15% OFF</h2>
+            <p>Recibe las últimas novedades y ofertas exclusivas</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); suscribirse();">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Tu tienda de confianza para productos tech de calidad con los mejores precios del mercado.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fab fa-whatsapp"></i> +57 300 401 5479</p>
+                    <p><i class="fas fa-envelope"></i> info@techstore.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Barranquilla, Colombia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animación de carga
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loadingScreen = document.getElementById('loadingScreen');
+                loadingScreen.classList.add('loaded');
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000); // 2 segundos de carga
+        });
+
+        // Función para comprar por WhatsApp
+        function comprarWhatsApp(producto, precio) {
+            const numeroWhatsApp = '573004015479';
+            const mensaje = `Hola, quiero comprar el producto: ${producto} con precio de $${precio}`;
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        // Función para suscribirse
+        function suscribirse() {
+            alert('¡Gracias por suscribirte! Pronto recibirás ofertas exclusivas.');
+        }
+
+        // Animación de corazón (favoritos)
+        document.querySelectorAll('.favorite-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    this.style.color = '#fe2c55';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    this.style.color = '';
+                }
+            });
+        });
+
+        // Animación de scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
